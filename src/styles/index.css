@@ -1,0 +1,151 @@
+/* Header */
+header {
+  width: calc(100% - 4rem);
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--brand800);
+  padding: 0 4rem;
+  border-radius: 2rem;
+}
+
+header .menu-options {
+  display: flex;
+  gap: 2rem;
+}
+
+header .menu-option {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: var(--zinc50);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease-in;
+}
+
+header .menu-option:hover {
+  background: #FAFAFA10;
+}
+
+header .platform-link {
+  height: 2.5rem;
+  padding: 0 1.625rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: var(--zinc50);
+  font-weight: 600;
+  font-size: 0.875rem;
+  background: var(--white);
+  color: var(--black);
+  transition: filter 0.2s ease-in;
+}
+
+header .platform-link:hover {
+  filter: brightness(0.9);
+}
+
+/* Main */
+main {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero - Section */
+.hero-container {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/map.svg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container .acident-span {
+  text-align: center;
+  color: var(--brand600);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2.25rem;
+}
+
+.hero-container > h1 {
+  width: 827px;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-container > span {
+  width: 547px;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--zinc700);
+}
+
+/* How it works - Section */
+.how-it-works {
+  padding: 7.5rem 6.25rem;
+}
+
+.how-it-works .title {
+  color: var(--brand800);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.how-it-works .cards-container {
+  margin-top: 2.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-it-works .card {
+  max-width: 375px;
+  padding: 2.25rem 2rem;
+  color: var(--zinc50);
+  border-radius: 5px;
+}
+
+.how-it-works .card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.how-it-works .card .card-header > span {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.how-it-works .card .card-header .card-number {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--zinc50);
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.how-it-works .card .card-description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--zinc300);
+}
+
+.how-it-works .card.blue {
+  background: var(--brand800);
+}

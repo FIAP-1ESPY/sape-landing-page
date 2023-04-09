@@ -1,0 +1,54 @@
+:root {
+  --brand800: #1E40AF;
+  --brand600: #2563EB;
+
+  --indigo800: #3730A3;
+
+  --orange700: #C2410C;
+
+  --zinc50: #FAFAFA;
+  --zinc700: #3F3F46;
+  --zinc300: #D4D4D8;
+
+  --white: #FFF;
+  --black: #000000;
+}
+
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  width: 100vw;
+  height: 100vh;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
