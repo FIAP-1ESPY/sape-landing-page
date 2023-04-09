@@ -106,10 +106,10 @@ main {
   margin-top: 2.25rem;
   display: flex;
   justify-content: space-between;
+  gap: 3.5rem;
 }
 
 .how-it-works .card {
-  max-width: 375px;
   padding: 2.25rem 2rem;
   color: var(--zinc50);
   border-radius: 5px;
@@ -148,4 +148,12 @@ main {
 
 .how-it-works .card.blue {
   background: var(--brand800);
+}
+
+.how-it-works .card.indigo {
+  background: var(--indigo800);
+}
+
+.how-it-works .card.orange {
+  background: var(--orange700);
 }
