@@ -1,137 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="./styles/global.css">
-  <title>SAPE</title>
-</head>
-<body>
-  <header>
-    <img src="./assets/logo.svg" alt="Logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <title>SAPE</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logo" />
 
-    <div class="menu-options">
-      <div class="menu-option">
-        <a href="#">Como funciona?</a>
-      </div>
-
-      <div class="menu-option">
-        <a href="#">Nosso objetivo</a>
-      </div>
-
-      <div class="menu-option">
-        <a href="#">Quero ser avisado(a)</a>
-      </div>
-
-      <div class="menu-option">
-        <a href="#">Contato</a>
-      </div>
-    </div>
-
-    <a href="#" class="platform-link">Acessar plataforma</a>
-  </header>
-
-  <main>
-    <section class="hero-container">
-      <span class="acident-span">Vamos evitar acidentes</span>
-
-      <h1>Tenha a segurança da sua população contra enchentes e alagamentos</h1>
-
-      <span>
-        Tenha o gerenciamento de áreas com riscos de enchentes e alagamentos 
-        de sua cidade e evite acidentes.
-      </span>
-    </section>
-
-    <section class="how-it-works">
-      <span class="title">Como funciona?</span>
-
-      <div class="cards-container">
-        <div class="card blue">
-          <div class="card-header">
-            <span>Aviso</span>
-
-            <div class="card-number">1.</div>
-          </div>
-
-          <span class="card-description">
-            A partir de qualquer alteração climática, será enviado mensagens de SMS
-            e notificações nos smartphones.
-          </span>
+      <div class="menu-options">
+        <div class="menu-option">
+          <a href="#how-it-works">Como funciona?</a>
         </div>
 
-        <div class="card indigo">
-          <div class="card-header">
-            <span>Dashboard</span>
-
-            <div class="card-number">2.</div>
-          </div>
-
-          <span class="card-description">
-            Nele você tem a visualização geral da situação da sua cidade em 
-            relação as enchentes e alagamentos.
-          </span>
+        <div class="menu-option">
+          <a href="#goals">Nosso objetivo</a>
         </div>
 
-        <div class="card orange">
-          <div class="card-header">
-            <span>Alerta sonoro</span>
+        <div class="menu-option">
+          <a href="#">Quero ser avisado(a)</a>
+        </div>
 
-            <div class="card-number">3.</div>
-          </div>
-
-          <span class="card-description">
-            Quando o sistema estiver em alerta máximo, será emitido sinais 
-            sonoros em postes ao redor da sua cidade.
-          </span>
+        <div class="menu-option">
+          <a href="#">Contato</a>
         </div>
       </div>
-    </section>
 
-    <section class="goals">
-      <div class="goals-description">
-        <h1>Nosso objetivo</h1>
+      <a href="#" class="platform-link">Acessar plataforma</a>
+    </header>
+
+    <main>
+      <section class="hero-container">
+        <span class="acident-span">Vamos evitar acidentes</span>
+
+        <h1>
+          Tenha a segurança da sua população contra enchentes e alagamentos
+        </h1>
+
         <span>
-          Temos o intuito de prevenir enchentes e alagamento em áreas urbanas,
-          protegendo a população e o meio ambiente.  Com uma abordagem sustentável
-          e eficiente, visamos minimizar o impacto ambiental e garantir a segurança
-          e qualidade de vida das comunidades. O objetivo é contribuir para um 
-          ambiente urbano mais seguro e saudável, evitando prejuízos econômicos
-          e sociais causados por eventos climáticos extremos.
+          Tenha o gerenciamento de áreas com riscos de enchentes e alagamentos
+          de sua cidade e evite acidentes.
         </span>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <span class="title">Como funciona?</span>
+
+        <div class="cards-container">
+          <div class="card blue">
+            <div class="card-header">
+              <span>Aviso</span>
+
+              <div class="card-number">1.</div>
+            </div>
+
+            <span class="card-description">
+              A partir de qualquer alteração climática, será enviado mensagens
+              de SMS e notificações nos smartphones.
+            </span>
+          </div>
+
+          <div class="card indigo">
+            <div class="card-header">
+              <span>Dashboard</span>
+
+              <div class="card-number">2.</div>
+            </div>
+
+            <span class="card-description">
+              Nele você tem a visualização geral da situação da sua cidade em
+              relação as enchentes e alagamentos.
+            </span>
+          </div>
+
+          <div class="card orange">
+            <div class="card-header">
+              <span>Alerta sonoro</span>
+
+              <div class="card-number">3.</div>
+            </div>
+
+            <span class="card-description">
+              Quando o sistema estiver em alerta máximo, será emitido sinais
+              sonoros em postes ao redor da sua cidade.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="goals" id="goals">
+        <div class="goals-description">
+          <h1>Nosso objetivo</h1>
+          <span>
+            Temos o intuito de prevenir enchentes e alagamento em áreas urbanas,
+            protegendo a população e o meio ambiente. Com uma abordagem
+            sustentável e eficiente, visamos minimizar o impacto ambiental e
+            garantir a segurança e qualidade de vida das comunidades. O objetivo
+            é contribuir para um ambiente urbano mais seguro e saudável,
+            evitando prejuízos econômicos e sociais causados por eventos
+            climáticos extremos.
+          </span>
+        </div>
+
+        <img src="./assets/flood-car.png" alt="Carro inundado" />
+      </section>
+
+      <section class="solution-benefits" id="solution-benefits">
+        <h1 class="solution-title">Impactos da nossa solução</h1>
+
+        <div class="solutions-grid">
+          <div class="solution-card">
+            <div class="solution-card-title-container">
+              <div class="solution-card-icon">
+                <img
+                  src="./assets/icons/clock-countdown-bold.svg"
+                  alt="Clock countdown"
+                />
+              </div>
+              <strong class="solution-card-title">Real-time</strong>
+            </div>
+            <div class="solution-card-description">
+              Nossa solução tem o foco em avisos de enchentes e alagamentos em
+              quase tempo real, prevenindo assim, danos a sociedade.
+            </div>
+          </div>
+          <div class="solution-card">
+            <div class="solution-card-title-container">
+              <div class="solution-card-icon">
+                <img
+                  src="./assets/icons/chart-bar-bold.svg"
+                  alt="Clock countdown"
+                />
+              </div>
+              <strong class="solution-card-title">Monitoramento preciso</strong>
+            </div>
+            <div class="solution-card-description">
+              Dashboard de monitoramento das regiões que podem sofrer problemas
+              e históricos mensais.
+            </div>
+          </div>
+          <div class="solution-card">
+            <div class="solution-card-title-container">
+              <div class="solution-card-icon">
+                <img
+                  src="./assets/icons/siren-bold.svg"
+                  alt="Clock countdown"
+                />
+              </div>
+              <strong class="solution-card-title">Cidade inteligente</strong>
+            </div>
+            <div class="solution-card-description">
+              Sistema inteligente de avisos sonoros em postes espalhados pelas
+              cidades.
+            </div>
+          </div>
+          <div class="solution-card">
+            <div class="solution-card-title-container">
+              <div class="solution-card-icon">
+                <img
+                  src="./assets/icons/hand-heart-bold.svg"
+                  alt="Clock countdown"
+                />
+              </div>
+              <strong class="solution-card-title">
+                Responsabilidade social
+              </strong>
+            </div>
+            <div class="solution-card-description">
+              Tudo projeto para conseguir melhor responsabilidade social e
+              ambiental possível.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="./assets/logo.svg" alt="Logo" />
+
+      <div class="social-media">
+        <span>Redes sociais</span>
+
+        <div class="social-media-icons">
+          <a href="#">
+            <img src="./assets/icons/instagram.svg" alt="Instagram" />
+          </a>
+
+          <a href="#">
+            <img src="./assets/icons/facebook.svg" alt="Facebook" />
+          </a>
+
+          <a href="#">
+            <img src="./assets/icons/whatsapp.svg" alt="Whatsapp" />
+          </a>
+        </div>
       </div>
 
-      <img src="./assets/flood-car.png" alt="Carro inundado">
-    </section>
-  </main>
-
-  <footer>
-    <img src="./assets/logo.svg" alt="Logo">
-
-    <div class="social-media">
-      <span>Redes sociais</span>
-
-      <div class="social-media-icons">
-        <a href="#">
-          <img src="./assets/icons/instagram.svg" alt="Instagram">
-        </a>
-
-        <a href="#">
-          <img src="./assets/icons/facebook.svg" alt="Facebook">
-        </a>
-
-        <a href="#">
-          <img src="./assets/icons/whatsapp.svg" alt="Whatsapp">
-        </a>
-      </div>
-    </div>
-
-    <span>Desenvolvido por Equipe π Solutions</span>
-  </footer>
-</body>
+      <span>Desenvolvido por Equipe π Solutions</span>
+    </footer>
+  </body>
 </html>
