@@ -28,11 +28,11 @@
         </div>
 
         <div class="menu-option">
-          <a href="#">Quero ser avisado(a)</a>
+          <a href="#want-be-warned">Quero ser avisado(a)</a>
         </div>
 
         <div class="menu-option">
-          <a href="#">Contato</a>
+          <a href="#contact-us">Contato</a>
         </div>
       </div>
 
@@ -183,12 +183,43 @@
           </div>
         </div>
       </section>
+
+      <section class="want-be-warned" id="want-be-warned">
+        <div class="want-be-warned-content">
+          <h1 class="want-be-warned-content-title">
+            Quero ser avisado de algum incidente
+          </h1>
+          <span class="want-be-warned-content-description">
+            Se você deseja ser avisado pelo nosso sistema de algum alagamento ou
+            enchente, preencha o formulário ao lado.
+          </span>
+        </div>
+
+        <form class="want-be-warned-form">
+          <div class="want-be-warned-form-inputs-container">
+            <div class="styled-input">
+              <label for="fullName">Nome completo</label>
+              <input type="text" name="fullName" />
+            </div>
+            <div class="styled-input">
+              <label for="phone">Telefone celular</label>
+              <input type="text" name="phone" />
+            </div>
+            <div class="styled-input">
+              <label for="location">Localização</label>
+              <input type="text" name="location" />
+            </div>
+          </div>
+
+          <button type="submit" class="primary-button">Inscrever-se</button>
+        </form>
+      </section>
     </main>
 
     <footer>
       <img src="./assets/logo.svg" alt="Logo" />
 
-      <div class="social-media">
+      <div class="social-media" id="contact-us">
         <span>Redes sociais</span>
 
         <div class="social-media-icons">
