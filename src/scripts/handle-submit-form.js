@@ -1,14 +1,16 @@
-const $wantBeWarnedForm = document.getElementById('want-be-warned-form')
+const $wantBeWarnedForm = document.querySelector('#want-be-warned-form')
 const $submitButton = document.querySelector('#want-be-warned-form button[type="submit"]')
 
 const formControl = {
   hasSubmitted: false,
   fields: {
     fullName: {
+      label: 'Nome completo',
       error: false,
       rules: [(value) => value && value.length > 0]
     },
     phone: {
+      label: 'Telefone celular',
       error: false,
       rules: [(value) => value && value.length > 0, (value) => value.replace(/\D+/g, '').length === 11],
       mask: (value) =>
@@ -19,6 +21,7 @@ const formControl = {
           .substring(0, 15)
     },
     location: {
+      label: 'Localização',
       error: false,
       rules: [(value) => value && value.length > 0]
     }
@@ -66,7 +69,9 @@ const formControl = {
       //   $formMaskedInput.child
       // })
 
-      alert('Campos inválidos, revise')
+      const invalidFields = Object.entries(formControl.fields).filter(([, control]) => control.error).map(([, control]) => control.label).join('\n')
+
+      alert(`Campos inválidos, revise: \n\n${invalidFields}`)
 
       $submitButton.textContent = 'Inscrever-se'
       return

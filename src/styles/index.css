@@ -127,11 +127,21 @@ header .platform-link:hover {
 /* How it works - Section */
 .how-it-works {
   padding: 7.5rem 6.25rem;
+
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 1rem;
 }
 
 .how-it-works .title {
   color: var(--brand800);
-  font-size: 1.125rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -196,6 +206,9 @@ header .platform-link:hover {
   display: flex;
   justify-content: space-between;
   background: var(--zinc900);
+
+  height: 100vh;
+  width: 100%;
 }
 
 .goals-description {
@@ -223,8 +236,6 @@ header .platform-link:hover {
   height: 100vh;
   width: 100%;
 
-  background: var(--brand800);
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +250,7 @@ header .platform-link:hover {
   font-size: 2.25rem;
   font-weight: 600;
 
-  color: var(--white);
+  color: var(--zinc900);
 }
 
 .solution-benefits .solutions-grid {
@@ -266,6 +277,10 @@ header .platform-link:hover {
   flex-direction: column;
 
   row-gap: 1.5rem;
+}
+
+.solution-benefits .solutions-grid .solution-card.problem {
+  background: var(--orange700);
 }
 
 .solution-benefits
@@ -315,7 +330,7 @@ header .platform-link:hover {
 /* Want be warned - Section */
 
 .want-be-warned {
-  height: 676px;
+  height: 100vh;
   width: 100%;
 
   display: flex;
@@ -375,6 +390,41 @@ header .platform-link:hover {
   row-gap: 1.5rem;
 }
 
+.contact-us {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 2rem;
+}
+
+.contact-us .contact-us-content {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 1rem;
+
+  text-align: center;
+}
+
+.contact-us .contact-us-content > h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+
+  color: var(--zinc900);
+}
+
+.contact-us .contact-us-content > span {
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: var(--zinc700);
+}
+
 .styled-input {
   width: 100%;
 
@@ -422,21 +472,68 @@ header .platform-link:hover {
   font-size: 0.875rem;
   font-weight: 600;
 
-  background: var(--zinc50);
-  color: var(--black);
+  background: var(--white);
+  color: var(--zinc900);
 
-  transition: filter 0.2s ease-in;
+  transform: scale(100%);
+
+  transition: filter, transform 0.2s ease-in-out;
 }
 
 .primary-button:disabled {
   pointer-events: none;
-  filter: brightness(0.9);
+  opacity: 0.7;
+
+  cursor: not-allowed;
 
   user-select: none;
 }
 
 .primary-button:hover {
   filter: brightness(0.9);
+
+  transform: scale(102%);
+}
+
+.secondary-button {
+  height: 2.75rem;
+  width: 100%;
+  padding: 0 1.625rem;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  border: 1px solid var(--zinc50);
+  background: var(--brand800);
+  color: var(--zinc50);
+
+  transform: scale(100%);
+
+  transition: filter, transform 0.2s ease-in-out;
+}
+
+.secondary-button:disabled {
+  pointer-events: none;
+  opacity: 0.7;
+
+  cursor: not-allowed;
+
+  user-select: none;
+}
+
+.secondary-button:hover {
+  filter: brightness(0.9);
+
+  transform: scale(102%);
+}
+
+.medium-button {
+  max-width: 426px;
 }
 
 /* Footer */

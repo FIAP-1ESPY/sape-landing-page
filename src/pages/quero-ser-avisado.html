@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+
+    <title>SAPE - Quero ser avisado</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img src="../assets/logo.svg" alt="Logo" />
+      </a>
+
+      <div class="menu-options">
+        <div class="menu-option">
+          <a href="../pages/como-funciona.html">Como funciona?</a>
+        </div>
+
+        <div class="menu-option">
+          <a href="../pages/nosso-objetivo.html">Nosso objetivo</a>
+        </div>
+
+        <div class="menu-option">
+          <a href="../pages/quero-ser-avisado.html">Quero ser avisado(a)</a>
+        </div>
+
+        <div class="menu-option">
+          <a href="../pages/impactos.html">Impactos da solução</a>
+        </div>
+
+        <div class="menu-option">
+          <a href="../pages/contato.html">Contato</a>
+        </div>
+      </div>
+
+      <!-- <a href="#" class="platform-link">Acessar plataforma</a> -->
+    </header>
+
+    <main>
+      <section class="want-be-warned" id="want-be-warned">
+        <div class="want-be-warned-content">
+          <h1 class="want-be-warned-content-title">
+            Quero ser avisado de algum incidente
+          </h1>
+          <span class="want-be-warned-content-description">
+            Se você deseja ser avisado pelo nosso sistema de algum alagamento ou
+            enchente, preencha o formulário ao lado.
+          </span>
+        </div>
+
+        <form class="want-be-warned-form" id="want-be-warned-form">
+          <div class="want-be-warned-form-inputs-container">
+            <div class="styled-input">
+              <label for="fullName">Nome completo</label>
+              <input type="text" name="fullName" />
+            </div>
+            <div class="styled-input">
+              <label for="phone">Telefone celular</label>
+              <input type="text" name="phone" />
+            </div>
+            <div class="styled-input">
+              <label for="location">Localização</label>
+              <input type="text" name="location" />
+            </div>
+          </div>
+
+          <button type="submit" class="primary-button">Inscrever-se</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <img src="../assets/logo.svg" alt="Logo" />
+
+      <div class="social-media" id="contact-us">
+        <span>Redes sociais</span>
+
+        <div class="social-media-icons">
+          <a href="#">
+            <img src="../assets/icons/instagram.svg" alt="Instagram" />
+          </a>
+
+          <a href="#">
+            <img src="../assets/icons/facebook.svg" alt="Facebook" />
+          </a>
+
+          <a href="#">
+            <img src="../assets/icons/whatsapp.svg" alt="Whatsapp" />
+          </a>
+        </div>
+      </div>
+
+      <span>Desenvolvido por Equipe π Solutions</span>
+    </footer>
+
+    <script src="../scripts/handle-submit-form.js"></script>
+  </body>
+</html>
